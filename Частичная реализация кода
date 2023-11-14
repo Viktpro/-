@@ -1,0 +1,42 @@
+Этот скрипт должен быть продолжением кода, при помощи которого был составлен рисунок, но так как у нас нет доступа к этому коду, часть этого скрипта мы заменили словами заменили словами.
+
+                                 Python код:  
+
+Каждую белую точку мы называем  white_point
+Каждую желтую точку мы называем  yellow_point
+
+true_points[white_point]
+
+
+yellow_point  =  false
+x = 0
+y = 0
+
+
+while y != 3:
+if «желтая точка соединена с любой другой точкой при помощи линии»:
+near_point_count  =  x + 1
+	y = y + 1
+
+if near_point_count  ==  3:
+	yellow_point  =  true
+
+
+
+if  yellow_point  ==  true:
+	true_points.append(yellow_point)
+elif yellow_point  ==  false:
+	false_points.append(yellow_point)
+
+
+
+if «у (yellow_point) есть два желтых соседа, и у каждого из них есть по два желтых соседа и один белый сосед:
+	каждая «Желтая точка», которая является соседом (yellow_point)» = true
+	if «Желтая точка» ==  true:
+		true_points.append(«Желтая точка»)
+	elif ««Желтая точка» ==  false:
+		false_points.append(«Желтая точка»)
+
+del false_points
+
+#Мы избавились от лишних точек и оставили только *Удачные*
